@@ -1,0 +1,49 @@
+﻿{% load static %}
+{% load staticfiles %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru">
+    <head>
+        <meta name="viewport">
+        <link rel="shortcut icon" href="{% static 'Logotype.png' %}" type="image/png">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}">
+        {% block Script %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="Hat">
+            <a class="Logotype" href="/Home" >
+                <img src="{% static 'Logotype.png' %}" height="8%" width="8%" align="middle" hspace="10px" vspace="10px">
+                <span class="Logo" style="color: #030076;">Stasia's shop</span>
+            </a>
+            <div class="Anchors">
+                {% block Anchors %}
+                {% endblock %}
+                <a href="#Basement">Связь</a>
+            </div>
+            <div class="Link">
+                <a href="https:\\vk.com">       <img src="{% static 'VK.png' %}"        align="middle" class="Image" alt="Vk"></a>
+                <a href="https:\\facebook.com"> <img src="{% static 'Facebook.png' %}"  align="middle" class="Image" alt="Facebook"></a>
+                <a href="https:\\instagram.com"><img src="{% static 'Instagram.png' %}" align="middle" class="Image" alt="Instagram"></a>
+                <span class="Number" style="color: #030076;">+375 (29) 586 38 12</span>
+            </div>
+        </div>
+        {% block input %}
+        {% endblock %}
+        <div style="position: absolute; top: 10%">
+            <div class="Main">
+                {% block Main %}
+                {% endblock %}
+            </div>
+            <div id="Basement" style="
+                    background: url({% static 'Podval.gif' %});
+                    background-size: cover;
+                    ">
+                blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu
+                blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu
+                blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu blu
+            </div>
+        </div>
+    </body>
+</html>

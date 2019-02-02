@@ -1,0 +1,38 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{% block title %}TEST{% endblock %}
+
+{% block Script %}
+    <script>
+        function showHide()
+        {
+            var show = document.getElementById('Menu').style.display;
+            if (show == 'none')
+            {
+                document.getElementById('Menu').style.display = 'block';
+            }
+            else
+            {
+                document.getElementById('Menu').style.display = 'none';
+            }
+        }
+    </script>
+{% endblock %}
+
+{% block Anchors %}
+{% endblock %}
+
+{% block Main %}
+    <span onclick="showHide()">papapapapapap</span><br />
+    <div id="Menu" style="display: none">
+        <p><a href="">1________</a></p>
+        <p><a href="">2________</a></p>
+        <p><a href="">3________</a></p>
+        <p><a href="">4________</a></p>
+        <p><a href="">5________</a></p>
+        <p><a href="">6________</a></p>
+    </div>
+    <img src="{% static 'nast.jpg' %}">
+    <img src="{% static 'VK.png' %}">
+{% endblock %}

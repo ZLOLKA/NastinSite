@@ -1,0 +1,61 @@
+body{
+    font-size: 100%;
+}
+.Hat{
+    background-color: #AAA;/*#030076;*/
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 9%;
+}
+.Logotype{
+    position: inherit;
+}
+.Logo{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: xx-large;
+    position: inherit;
+    top: 2%;
+}
+.Anchors{
+    color: #FFFFFF;
+    word-spacing: 300%;
+    font-family: Time New Roman;
+    font-size: 200%;
+    position: inherit;
+    left: 30%;
+    top: 2%;
+
+}
+.Link{
+    position: inherit;
+    left: 60%;
+}
+.Image{
+    /*
+    height: 8%;
+    */
+    width: 8%;
+    padding-left:   2%;
+    padding-right:  2%;
+    padding-bottom: 2%;
+    padding-top:    2%;
+}
+.Number{
+    color: #FFFFFF;
+    font-size: 200%;
+    position: relative;
+    top: 12px;
+}
+.Main{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+}
+.Basement{
+
+}
