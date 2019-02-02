@@ -11,12 +11,23 @@ class Category(models.Model):
         return self.name
 
 
-class Maker(Category):
+class Maker(models.Model):
+
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(blank=True)
     experience = models.DecimalField(blank=True)
 
+    def __str__(self):
+        return self.name
 
-class Material(Category):
-    pass
+
+class Material(models.Model):
+
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Product(models.Model):
@@ -24,7 +35,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, models.CASCADE)
     maker = models.ForeignKey(Maker, models.CASCADE)
     name = models.CharField(max_length=100)
-    slug = models.SlugField()
+    slug = models.SlugField(blank=True)
     description = models.TextField()
     image = models.ImageField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
