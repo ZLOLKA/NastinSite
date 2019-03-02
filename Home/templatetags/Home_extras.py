@@ -5,6 +5,5 @@ register = template.Library()
 
 
 @register.filter(is_safe=True)
-@stringfilter
 def addstr(arg1, arg2):
     return arg1 + arg2
