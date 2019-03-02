@@ -1,7 +1,10 @@
 from django import template
+from django.template.defaultfilters import stringfilter
 
 register = template.Library()
 
-@register.filter
+
+@register.filter(is_safe=True)
+@stringfilter
 def addstr(arg1, arg2):
-    return str(arg1) + str(arg2)
+    return arg1 + arg2
