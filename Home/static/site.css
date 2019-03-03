@@ -1,9 +1,9 @@
 body{
     font-size: 100%;
-    background-color: #5897fb;
+    background-color: #FFFFFF; /*#5897fb;*/
 }
 .Hat{
-    background-color: #FFFFFF;/* #030076;*/
+    background-color: #030076;
     position: fixed;
     z-index: 3;
     top: 0px;
@@ -31,11 +31,11 @@ body{
     top: 2%;
 }
     .Anchors > a{
-        color: #030076;
+        color: #FFFFFF; /*#030076;*/
         text-decoration: none;
 }
     .Anchors > a:visited{
-        color: #030076;
+        color: #FFFFFF; /*#030076;*/
 }
 .Link{
     position: inherit;
