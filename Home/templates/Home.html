@@ -23,12 +23,7 @@
             {% endfor %}
             <a href="" onmouseover="aOver(this)" onmouseout="aOut(this)">Часто задаваемые вопросы</a>
         </div>
-        <img id="Pointer" src="{% static "Pointer.png" %}" align="left" height="70px" width="70px" onclick="showHide(this, document.getElementsByClassName('Menu')[0])" style="
-            transform: rotate(0deg);
-            position: relative;
-            left: 380px;
-            bottom: 345px;
-        ">
+        <img id="Pointer" src="{% static "Pointer.png" %}"  align="left" height="70px" width="70px" onclick="showHide()">
     </div>
 {% endblock %}
 

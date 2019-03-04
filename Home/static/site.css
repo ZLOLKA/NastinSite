@@ -73,6 +73,10 @@ body{
     height: 250px;
     top: 70px;
     left: -390px;
+    transition: left 2s;
+}
+.active {
+    left: 0;
 }
 #Menu{
     background-color: #030076;
@@ -88,6 +92,12 @@ body{
         padding: 10px;
         font-size: 200%;
     }
+#Pointer{
+    transform: rotate(0deg);
+    position: relative;
+    left: 380px;
+    bottom: 345px;
+}
 .Products{
     position: relative;
 }
