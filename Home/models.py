@@ -18,7 +18,7 @@ class Maker(models.Model):
     experience = models.DecimalField(max_digits=4, decimal_places=2, blank=True)
     description = models.TextField(blank=True)
     short_description = models.CharField(max_length=100, blank=True)
-    number = models.CharField(max_length=20)
+    number = models.CharField(blank=True, max_length=20)
 
     def __str__(self):
         return self.name
