@@ -18,8 +18,8 @@ from django.conf.urls import include, url
 
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url(r'^', include('Home.urls')),
     url(r'^home/', include('Home.urls')),
     url(r'^Home/', include('Home.urls')),
+    url('admin/', admin.site.urls),
+    url(r'^', include('Home.urls')),
 ]

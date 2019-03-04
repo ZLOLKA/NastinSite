@@ -13,5 +13,13 @@ def home_view(request):
     return render(request, 'Home.html', context)
 
 
+def product_view(request, product_slug):
+    product = Product.objects.get(slug=product_slug)
+    context = {
+        "product": product,
+    }
+    return render(request, "Product.html", context)
+
+
 def test(request):
     return render(request, 'test.html')
