@@ -9,8 +9,8 @@
 {% endblock %}
 
 {% block Anchors %}
-    <a href="#Master">Мастер</a>
-    <a href="#Production">Продукция</a>
+    <a href="#Master">Мастер </a>
+    <a href="#Production">Продукция </a>
 {% endblock %}
 
 {% block input %}
@@ -35,11 +35,11 @@
     <div id="Production">
         {% for product in products %}
             {% with "Products/"|addstr:product.image as url %}
-                <div class="Products">
+                <a href="{{ product.slug }}" class="Products">
                     <img src="{% static url %}" width="25%" height="25%" /><br />
                     {{ product.name }}<br />
-                    {{ product.price }}<br />
-                </div>
+                    {{ product.price }} BYN<br />
+                </a>
             {% endwith %}
         {% endfor %}
     </div>
